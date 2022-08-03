@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+}
+
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.3)),url("images/blackmarble.jpg");
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
+ .table-01 tr, .table-02 tr {
+    border-bottom: 1px solid #ffffff;
+}
+
+.table-01 {
+
+    width: 95%;
+    max-width: 840px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.table-01 td, .table-01 th {
+    padding: 8px;
+    vertical-align: top;
+    line-height: 24px;
+}
+
+.table-01 tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-01 tr:hover {background-color: #ddd;}
+
+.table-01 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border: none;}
+
+        td {
+            display: table-cell;
+            vertical-align: inherit;
+        }
+
+ table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.binfotxt {
+    color: rgb(255, 255, 255);
+    text-align:left;
+    margin-top: 5px;
+}
+
+#cat_img {
+    border-radius: 15px 50px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+
+    border: 10px solid transparent;
+  padding: 15px;
+  border-image: url("images/") 30 round;
+}
+
+/* .ragdoll_img:hover{
+    opacity:0.4;
+  filter:alpha(opacity=40);
+} */
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 15%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  .button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.6);}
+
+  .button3:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.6);}
+
+  .button3 {
+    background-color: #000b6b; /* Green */
+    border: none;
+    border-radius: 15%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.footer {
+  position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   /* background-image: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.849)),url("images/catcare.jfif"); */
+   background-repeat:no-repeat;
+
+   background-color: #5c5c5cde;
+    color: rgb(255, 255, 255); 
+   /* text-align: center; */
+   padding: 30px;
+}
+
+ .column {
+
+  height: 150px;
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}
+
+.footer_lines {
+  color: #ffffff;
+  background-color: #4D4D4D;
+  border-radius: 15px;
+  text-align: left;
+  margin: 10px;
+}
+
+/* Clear floats after the columns */
+.footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* .footerlinks {
+
+}
+
+ 
+
+ .footerlinks:hover {
+  color: yellow;
+} */
+
+/* a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: purple;
+  background-color: transparent;
+  text-decoration: underline;
+} */
+
+.footerlinks:link {
+color: rgb(255, 255, 255);
+
+text-decoration: none;
+}
+
+.footerlinks:visited {
+  color: rgb(184, 184, 184);
+  background-color: transparent;
+  text-decoration: none;
+  }
+
+
+.footerlinks:hover {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+  }
+
+
+.footerlinks:active {
+  color: rgb(126, 146, 255);
+  background-color: transparent;
+  text-decoration: underline;
+  }

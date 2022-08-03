@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      /*----------------------------------------------------------------------------------------------------------------------*/
+
+.footer {
+  position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   /* background-image: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.849)),url("images/catcare.jfif"); */
+   background-repeat:no-repeat;
+
+   background-color: #5c5c5cde;
+    color: rgb(255, 255, 255);
+   /* text-align: center; */
+   padding: 30px;
+}
+
+ .column {
+
+  height: 150px;
+  width: 24%;
+  float: left;
+  text-align: center;
+}
+
+.footer_lines {
+  color: #ffffff;
+  background-color: #4D4D4D;
+  border-radius: 15px;
+  text-align: left;
+  margin: 10px;
+}
+
+/* Clear floats after the columns */
+.footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footerlinks:link {
+color: rgb(255, 255, 255);
+
+text-decoration: none;
+}
+
+.footerlinks:visited {
+  color: rgb(184, 184, 184);
+  background-color: transparent;
+  text-decoration: none;
+  }
+
+
+.footerlinks:hover {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+  }
+
+
+.footerlinks:active {
+  color: rgb(126, 146, 255);
+  background-color: transparent;
+  text-decoration: underline;
+  }
+
+
+  /*social media icons */
+  .fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: radial-gradient(purple, white, yellow);
+  color: white;
+}
+
+.fa-search {
+  background: #3495df;
+  height: 1px; width: 1px;
+}
+/* footer column height */
+.column {
+  height: 195px;
+}
+
+.menu {
+  margin-right: 0%;
+}
+
+
+    </style>
+
+  </head>
+  <body>
+    <nav>
+  		<div class="logo">
+  			<!-- <span id="blue">CATS</span> -->
+        <img src="images/catlogo_wix.jpeg" alt="caltogo" height="80px" width="80px" class="logo_img">
+  		</div>
+  		<div class="menu">
+  			<a href="index.html">Home</a>
+  			<a href="breeds.html">Breeds</a>
+  			<a href="register_katzie.php">Register</a>
+        <a href="login.php">Login</a>
+        <a href="welcome.php">Adopt</a>
+        <a href="logout.php">Logout</a>
+        <form action="none" class="search" style="float: right;">
+          <input type="text" id="search", name="search" placeholder="Search Here...">
+          <button type="submit">Search</button>
+        </form>
+  		</div>
+  	</nav>
+
+    <script>
+        var i = 0;
+        var images = ["images/708385.jpg", "images/cat1.jfif", "images/523267.jpg", "images/682839.jpg", "images/725094.jpg"];
+        var time = 2000;
+        function changeImg(){
+          document.slide.src = images[i];
+
+          if(i < images.length - 1){
+            i++;
+          } else {
+            i = 0;
+          }
+          setTimeout("changeImg()", time);
+        }
+        window.onload = changeImg;
+    </script>
+
+    <div class="container">
+      <div class="left">
+        <img name = "slide" class="homepg_img">
+      </div>
+      <br>
+      <div class="right">
+        <h1> Katzie - Adopt Sassy Cats</h1><br>
+        <p> Saving one pet won't change the world, but for that one pet the world will change forever.</p><br>
+        <h1 style="font-size: 40px; color: #191970">Interesting Facts</h1>
+      </div>
+      <div class="container2">
+        <div class="rock">
+          <p>Cats are nearsighted, but their peripheral vision and night vision are much better than that of humans.
+          Male cats are more likely to be left-pawed, while female cats are more likely to be right-pawed.</p>
+        </div>
+        <div class="rock">
+          <p>Cats have an extra organ that allows them to taste scents on the air, which is why your cat stares at you with her mouth open from time to time.
+          Cats are supposed to have 18 toes (five toes on each front paw; four toes on each back paw)</p>
+        </div>
+        <div class="rock">
+          <p>Cats’ claws all curve downward, which means that they can’t climb down trees head-first. Instead, they have to back down the trunk.
+          .Cats can jump up to six times their length.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer below -->
+    <div class="footer">
+
+      <div class="column" style="height: 260px;">
+        <h3 style="text-align: left;"><u>⌘Navigate</u></h3>
+        <a href="index.html" class="footerlinks"><p class="footer_lines" style="color: #ffffff;">➲Home</p></a>
+        <a href="breeds.html" class="footerlinks"><p class="footer_lines" style="color: #ffffff;">➲Breeds</p></a>
+        <a href="register_katzie.php" class="footerlinks"><p class="footer_lines" style="color: #ffffff;">➲Register</p></a>
+        <a href="login.php" class="footerlinks"><p class="footer_lines" style="color: #ffffff;">➲Login</p></a>
+        <a href="welcome.php" class="footerlinks"><p class="footer_lines" style="color: #ffffff;">➲Adopt</p></a>
+    </div>
+
+      <div class="column">
+          <h3 style="text-align: left;"><u>⌘Imp Links</u></h3>
+          
+          <a href="aboutus.html" class="footerlinks"><p class="footer_lines" style="color: #ffffff;">➲About</p></a>
+          <a href="policy.html" class="footerlinks"><p class="footer_lines" style="color: #ffffff;">➲Policy</p></a>
+          <a href="contactus.html" class="footerlinks"><p class="footer_lines" style="color: #ffffff;">➲Contact Us</p></a>
+      </div>
+
+      <div class="column">
+          <h3 style="text-align: left;"><u>⌘Social Media</u></h3>
+
+          <div style="text-align: left; margin-top: 10px;">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a></div>
+
+      </div>
+
+      <div class="column">
+          <h3 style="text-align: left;"><u>⌘Team</u></h3>
+          <a href="#" class="footerlinks"><p class="footer_lines" style="color: #ffffff;">➲KRUSHNA PATIL</p></a>
+          <a href="#" class="footerlinks"><p class="footer_lines" style="color: #ffffff;">➲MAITREYA ZALTE</p></a>
+          <img src="images/catlogo_wix.jpeg" alt="caltogo" height="80px" width="80px" class="logo_img">
+      </div>
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,144 @@
+body {
+  background-image: linear-gradient(rgb(255,255,255,0.5), rgb(255,255,255,0.5)) ,url("images/catcare3.jfif");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+	width: 100%;
+	height: 80px;
+  margin: 0 auto;
+	display: flex;
+	align-items: center;
+	background-color: black;
+}
+
+.logo{
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	margin-left: 5%;
+}
+
+#blue{
+	color:#74b9ff;
+}
+#blue:hover{
+	color: white;
+}
+.menu{
+	margin-left: 20%;
+	margin-right: 5%;
+}
+
+.menu a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	margin: 10px;
+}
+
+.menu a:hover{
+  color: #20b2aa;
+}
+
+div.container {
+    margin: auto;
+    width: 300px;
+
+    margin-top: 100px;
+}
+
+td {
+  padding: 7px;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+input {
+  font-family: cursive;
+  border-radius: 10%;
+}
+
+input:hover {
+  opacity: 0.3;
+  background-color: #feffac;}
+
+textarea {
+  border-radius: 7%
+}
+
+textarea:hover {
+  background-color: #feffac;
+  opacity: 0.3;
+}
+
+/* Submit Button css below */
+.button {
+    background-color: #0096d1; /* Green */
+    border: none;
+    border-radius: 15%;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  .button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.6);}
+
+
+/* Footer css below */
+.footer {
+   left: 0;
+    bottom: 0;
+    margin-top: 5%;
+
+     width: 100%;
+     /* background-image: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.849)),url("images/catcare.jfif"); */
+     background-repeat:no-repeat;
+
+     background-color: #5c5c5cde;
+     color: rgb(255, 255, 255);
+     /* text-align: center; */
+     padding: 30px;
+
+  }
+
+   .column {
+
+    height: 180px;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+  }
+
+  .footer_lines {
+    text-align: left;
+    margin: 10px;
+  }
+
+  /* Clear floats after the columns */
+  .footer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+   .footerlinks:hover {
+    color: yellow;
+  }
